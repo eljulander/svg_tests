@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <shape1>
-    <svg width="300" height="150">
-          <rect width = "300" height = "150" style="stroke-width:5px;stroke:black;fill:white"></rect>
+    <svg id = "shape1" width="300" height="150">
+          <rect id = "border" width = "300" height = "150" style="stroke-width:5px;stroke:black;fill:white"></rect>
           <text id = "name" x="20" y="20" fill = "blue" style= "font-family: Sans-Serif">Name:</text>
-          <text id="status" x="150" y="20" fill = "blue" style= "font-family: Sans-Serif">Status: </text>
-          <rect id="progress" x = "5" y = "40" width= "2" height = "50" style = "fill:blue;stroke:black;stroke-width:5"></rect>-->
+          <text id= "status" x="150" y="20" fill = "blue" style= "font-family: Sans-Serif">Status: </text>
+          <rect id= "progress" x = "5" y = "40" width= "2" height = "50" style = "fill:blue;stroke:black;stroke-width:5"></rect>-->
     </svg>
 </shape1>

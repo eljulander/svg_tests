@@ -50,12 +50,32 @@ function nameIsValid(name){
     return (name != "Your Name Here" &&  name != "");
 }
 
+function adaptSize(){
+    console.log("change");
+    var w = $(document).width();
+    
+    $("#progress").attr({width:((r(w*.69))*((progress)/100)), height:r(w*.12), y:r(w*.1)});
+    $("#shape1").attr({width:r(w*.71), height:r(w*.36)});
+    $("#border").attr({width:r(w*.71), height:r(w*.36)});
+    $("#name").attr({x:r(r(w*.05)), y:r(w*.05)});
+    $("#status").attr({x:r(r(w*.35)), y:r(w*.05)});
+    
+}
+
 function updateProgress(x){
     progress = x;
-    $("#progress").attr("width",(290*((x)/100)));
+
+    
+    adaptSize();
+    
     $("#status").text("Status: "+getStatus());
     $("#name").text("Name: "+JSON.parse(localStorage.stats).name);
     $("#pro").text(progress+"%");
+}
+                        
+function r(num){
+        
+        return Math.round(num);
 }
 
 function getStatus(){
