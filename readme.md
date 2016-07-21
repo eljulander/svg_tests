@@ -7,5 +7,5 @@ ___
 Version 0.1.0
 
 ##Whats New
-1.)Adapats to screen size
-1.)Properly displays name on progress bar
+1.Adapts to screen size
+1.Properly displays name on progress bar
